@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="apfloat.jscience" type="repository">
+    <properties maven-id="org.apfloat:apfloat-jscience:1.12.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/apfloat-jscience-1.12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apfloat-1.12.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jscience-4.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javolution-5.2.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

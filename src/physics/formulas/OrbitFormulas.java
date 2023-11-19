@@ -1,4 +1,4 @@
-package formulas;
+package physics.formulas;
 
 public class OrbitFormulas {
 }

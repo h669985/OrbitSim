@@ -1,7 +1,7 @@
-package formulas;
+package physics.formulas;
 
 import bodies.CelestialBody;
-import bodies.CelestialBodyType;
+import physics.constants.Constants;
 
 public class CelestialBodyFormulas {
 
@@ -18,7 +18,7 @@ public class CelestialBodyFormulas {
 
     public static double surfaceGravity(CelestialBody celestialBody) {
         double M = celestialBody.getMass_kg();
-        double R = convert_km_to_m(volumetricMeanRadius(celestialBody));
+        double R = convert_km_to_m(volumetricMeanRadius(celestialBody)); // Assume surface at 1 atmosphere if there is no solid surface
 
         return Constants.G * M / (R * R);
     }
@@ -29,15 +29,6 @@ public class CelestialBodyFormulas {
         double r = convert_km_to_m(distance_km);
 
         return Constants.G * (m1 * m2 / (r*r) );
-    }
-
-    public static double orbitalPeriodStar(CelestialBody celestialBody1, CelestialBody celestialBody2, double semimajor_axis) {
-        double m2 = celestialBody2.getMass_kg();
-        double a = convert_km_to_m(semimajor_axis);
-
-        double p = 2*Math.PI*Math.sqrt(Math.pow(a, 3) / (Constants.G * m2));
-
-        return p/86400;
     }
 
 }

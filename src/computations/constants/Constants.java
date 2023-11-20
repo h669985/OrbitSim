@@ -1,4 +1,4 @@
-package physics.constants;
+package computations.constants;
 
 // Random links:
 // https://ssd.jpl.nasa.gov/planets/approx_pos.html
